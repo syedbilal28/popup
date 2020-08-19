@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+            var opener= document.getElementById("opener");
+            opener.onclick=function(){
+                popup=document.createElement("div");
+                popup.className="popup"
+                close =document.createElement("div");
+                close_button= document.createElement("button");
+                $(close_button).html("X");
+                close.append(close_button);
+                popup.append(close);
+                form=document.createElement("form");
+                form.className="Email-form"
+                email= document.createElement("input");
+                email.className="email";
+                p= document.createElement("p");
+                p.innerHTML="Email Address";
+                submit=document.createElement("button");
+                $(submit).html("Send");
+                form.appendChild(p);
+                form.appendChild(email);
+                form.appendChild(submit);
+                popup.style.visibility="visible";
+                popup.append(form);
+                document.body.appendChild(popup);
+                $(".popup").css({
+                  "border-radius":"1rem",
+                  "font-family": '"Helvetica Neue", Helvetica, Arial, sans-serif', 
+                  "font-weight":"bold",
+                  "margin":"auto auto",
+                  "width":"24rem",
+                  "height":"12rem",
+                  "border":"1px solid black",
+                  "position":"absolute",
+                  "top":"0",
+                  "bottom":"0",
+                  "left":"0",
+                  "right":"0",
+                  "z-index":'99',
+                  "opacity":"1",
+                  "background":"#f7f7f7"
+                  });
+                $(".Email-form").css({"padding":"1rem"});
+                $(".email").css({"width":"12rem","height":"1.5rem","border-radius":"0.2rem","display":"block"});
+                $(close_button).css({"float":"right","border-radius":"20px","margin":"0.2rem 0.5rem","border":"none"});
+                $(document.window).css({"backdrop-filter":"blur(5px)"});
+                $(submit).css({"float":"right","margin-top":"2rem","height":"2.5rem","width":"5rem","background":"#0275d8","border-radius":"0.5rem","color":"#f7f7f7"});
+                
+                close_button.onclick= function() {
+                  this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+                  return false;
+                };
+            }
+
+        });
+    
+    </script>
+   
+</head>
+<body>
+    <button id ="opener">Click here</button>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, iusto doloremque illum maxime perferendis praesentium dignissimos quidem similique laudantium magnam cum cupiditate molestias aliquid commodi nemo deleniti accusantium a itaque? Perferendis cumque, adipisci quod nisi commodi at laboriosam illo eum, assumenda nihil voluptatem quaerat dolore ad a sint? Mollitia porro sint, incidunt, cum, rem sit consequatur quod eligendi perferendis quia fugit dolores? In magnam id minus. Commodi quis quod minus quidem eos, expedita, eius consectetur animi architecto aperiam eaque eligendi ipsum quasi reprehenderit odit libero velit qui ut. Fuga aliquam necessitatibus sequi quibusdam. At alias temporibus praesentium in quaerat esse architecto, molestias cumque repudiandae soluta adipisci eveniet nobis beatae tempore voluptatibus laudantium maxime. Omnis blanditiis aspernatur sint consectetur minus? Suscipit veritatis rerum qui vitae doloribus quod nisi aut et voluptatum. Architecto optio assumenda ut distinctio odit eos illo excepturi fuga saepe? Laboriosam, corrupti iusto, odio numquam natus facilis ut praesentium commodi molestias exercitationem officia maiores doloribus! Repellat, cupiditate veritatis consectetur amet maiores atque, culpa aperiam tempora voluptate temporibus dolor unde. Sed placeat delectus dolor, autem, aliquid ad minima ullam asperiores sequi vero accusamus mollitia veritatis sapiente incidunt sint ea laboriosam voluptate excepturi modi animi est dicta ipsum magnam. Odio, iusto sunt nam deleniti delectus assumenda ducimus ratione, voluptate soluta unde, libero quos excepturi cupiditate blanditiis laborum ut obcaecati explicabo. Dolore natus perspiciatis optio unde ut rem ratione eveniet ipsum, minima, quam enim fugit in nam exercitationem possimus explicabo voluptate vitae! Dolor architecto dicta atque veritatis sequi repudiandae accusantium quis molestias ex ipsam eligendi nobis, nam fugit eos cupiditate eaque pariatur officia tenetur ullam vitae earum ducimus? Officiis optio blanditiis ipsum dolorem alias nobis doloremque ratione eaque, aut dicta quia mollitia velit? Vitae minus soluta voluptates obcaecati quia ullam odio natus temporibus iste facilis perferendis exercitationem delectus ipsum molestias voluptatibus, cum quam. Repellat doloremque in id ullam laudantium perferendis nihil neque ea quam blanditiis dignissimos eum magni labore tempora quod, saepe rem natus odit consequatur excepturi eius cupiditate facilis exercitationem dolorum! Expedita velit ipsa aut autem, cum modi eligendi doloribus, iusto et enim inventore harum amet ex dolor numquam nesciunt omnis laborum! Tempora dolorem, quis ipsum facere suscipit quisquam quas cum maiores soluta enim autem quasi aperiam est voluptas esse ipsa? Dignissimos autem ipsa, beatae reiciendis aperiam repudiandae quibusdam commodi fugiat minus mollitia necessitatibus quia ex ea animi ratione maxime laudantium magnam consequuntur esse explicabo quidem quas? Sequi, porro reiciendis? Dolor excepturi est ipsam, nulla aliquid culpa amet id iure maxime, debitis accusamus repellendus hic, qui animi consequatur repudiandae. Illum nulla aperiam nesciunt maxime soluta animi ea sint provident ab accusamus? Exercitationem in eum veniam reprehenderit ipsum enim inventore doloremque rem asperiores accusantium, optio praesentium natus delectus error facere voluptates ea eveniet voluptatum dicta dolor harum provident necessitatibus facilis? Aspernatur similique mollitia vel cumque nisi modi, quas expedita fugit molestiae quibusdam quam tenetur ut necessitatibus optio dicta magni, minima pariatur. Ratione, ab commodi doloribus dolor blanditiis odit enim delectus ad numquam soluta corrupti unde itaque sequi fuga. Quo provident ratione laborum!</div>
+</body>
+</html>
